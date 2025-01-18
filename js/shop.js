@@ -9,8 +9,8 @@ let drowDrinksUI;
   categoryContainer.innerHTML = "";
   let drinkloop = drink.map((item) => {
     return `
-     <div class="card" onclick = (show(${item.id}))>
-            <div class="box-img">
+     <div class="card">
+            <div class="box-img"  onclick = (show(${item.id}))>
               <img src="${item.img}" alt="img" />
             </div>
             <div class="content-text">
