@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Coffee Shop/ Home</title>
+    <link rel="icon" type="image/png" href="./images/logo.jpg" />
+    <!-- fontAwesom -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google fonts1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- popap form -->
+    <div class="cover-form">
+      <div class="container-form">
+        <span id="close-form">X</span>
+        <div class="sign-up">
+          <form action="" method="get">
+            <h1>Create new Account</h1>
+            <input type="text" placeholder="Name" id="sign-up-name"/>
+            <input type="email" placeholder="Email" id="sign-up-email" />
+            <input type="password" placeholder="Password" id="sign-up-password" />
+            <input type="submit" value="Submit" id="sign-up-submit">
+            <div id="btn-signin">Sign in Now</div>
+          </form>
+        </div>
+
+        <div class="sign-in">
+          <form action="" method="get">
+            <h1>Sign In Now</h1>
+            <input  name= "email" placeholder="Email" id="sign-in-email" />
+            <input type="password" placeholder="Password" id="sign-in-password" />
+            <input type="submit" value="Submit" id="sign-in-submit">
+            <div id="btn-signup">Register Now</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <header>
+      <!-- logo -->
+      <div class="logo">
+        <img src="./images/logo-1.png" alt="logo" srcset="" />
+      </div>
+      <!-- links -->
+      <nav>
+        <ul>
+          <li><a href="/index.html" class="active">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="/shop.html">shop</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#blogs">blogs</a></li>
+          <li><a href="#contactus">contact us</a></li>
+        </ul>
+      </nav>
+      <!-- icons -->
+      <div class="icons">
+        <i id="bars" class="fa-solid fa-bars"></i>
+        <i id="user" class="fa-solid fa-user"></i>
+
+        <i id="cart" class="fa-solid fa-cart-shopping">
+          <span>0</span>
+        </i>
+
+        <i id="mode" class="fa-regular fa-moon"></i>
+        
+        <!-- <i class="fa-regular fa-sun"></i> -->
+      </div>
+
+    </header>
+
+    <!-- hero section -->
+    <section class="hero" id="index.html">
+      <div class="container">
+        <div class="content">
+          <h2 class="active">Best Coffee</h2>
+
+          <h1>Make You day great with our special coffee!</h1>
+          <p>
+            welcome to our coffee paradise, where every bean tells a story and
+            every cup sparks joy
+          </p>
+          <div class="btns">
+            <a class="order" href="/shop.html">Order Now</a>
+            <a class="contact" href="#contactus">Contact Us</a>
+          </div>
+        </div>
+        <div class="imgs">
+          <img class="center-img" src="./images/07.png" alt="" />
+          <div class="other-img">
+            <img  src="./images/01.png" alt="" />
+            <img src="./images/02.png" alt="" />
+            <img src="./images/03.png" alt="" />
+            <img src="./images/04.png" alt="" />
+            <img src="./images/05.png" alt="" />
+            <img src="./images/06.png" alt="" />
+            <img class="active" src="./images/07.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- about section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Welcome to Our Coffee Shop</h3>
+            <p>
+              At our Coffee Shop, we believe in serving the best coffee in town. 
+              We source our beans from the finest farms and roast them to perfection 
+              to bring you a cup that’s full of flavor, warmth, and love. Whether you 
+              are a coffee enthusiast or just need a pick-me-up, we are here to offer 
+              you a great experience.
+            </p>
+            <p>
+              Our cozy atmosphere, friendly staff, and top-quality beverages make us 
+              the perfect spot to relax, work, or catch up with friends. Join us and 
+              indulge in our delicious coffees, teas, and treats. 
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/about.jpg" alt="Coffee Shop Image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- services section -->
+    <section class="Service" id="Services">
+      <div class="container">
+        <h1 class="section-title">our services</h1>
+        <!-- carrds -->
+        <div class="grid-boxs">
+          <!-- 1 -->
+          <div class="card">
+            <span class="icon"><i class="fa-solid fa-truck"></i></span>
+            <hr />
+            <h3 class="title">faster door delivery</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              quasi nihil quisquam a possimus similique repudiandae eum rem
+              dolorem. Ullam.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="card">
+            <span class="icon"><i class="fa-solid fa-mug-hot"></i></span>
+            <hr />
+            <h3 class="title">fresh coffee beans</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              quasi nihil quisquam a possimus similique repudiandae eum rem
+              dolorem. Ullam.
+            </p>
+          </div>
+          <!-- 3 -->
+          <div class="card">
+            <span class="icon"><i class="fa-solid fa-medal"></i></span>
+            <hr />
+            <h3 class="title">best quality coffee</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              quasi nihil quisquam a possimus similique repudiandae eum rem
+              dolorem. Ullam.
+            </p>
+          </div>
+          <!-- 4 -->
+          <div class="card">
+            <span class="icon"
+              ><i class="fa-regular fa-calendar-days"></i
+            ></span>
+            <hr />
+            <h3 class="title">online tabel booking</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              quasi nihil quisquam a possimus similique repudiandae eum rem
+              dolorem. Ullam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menu section -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="heading">
+          <h3>Our Menu</h3>
+          <p>lets check our menu</p>
+        </div>
+        <div class="grid-menu">
+          <!-- 1 -->
+          <div class="item-menu">
+            <div class="content">
+              <div class="imgbox">
+                <img src="./images/03.png" alt="img" />
+              </div>
+              <div class="infobox">
+                <h4>Americano Coffee</h4>
+                <p>Milk with vanilla flavored</p>
+              </div>
+            </div>
+            <div class="price">$50.25</div>
+          </div>
+          <!-- 2 -->
+          <div class="item-menu">
+            <div class="content">
+              <div class="imgbox">
+                <img src="./images/03.png" alt="img" />
+              </div>
+              <div class="infobox">
+                <h4>Americano Coffee</h4>
+                <p>Milk with vanilla flavored</p>
+              </div>
+            </div>
+            <div class="price">$50.25</div>
+          </div>
+          <!-- 2 -->
+          <div class="item-menu">
+            <div class="content">
+              <div class="imgbox">
+                <img src=".//images/03.png" alt="img" />
+              </div>
+              <div class="infobox">
+                <h4>Americano Coffee</h4>
+                <p>Milk with vanilla flavored</p>
+              </div>
+            </div>
+            <div class="price">$50.25</div>
+          </div>
+          <!-- 2 -->
+          <div class="item-menu">
+            <div class="content">
+              <div class="imgbox">
+                <img src=".//images/03.png" alt="img" />
+              </div>
+              <div class="infobox">
+                <h4>Americano Coffee</h4>
+                <p>Milk with vanilla flavored</p>
+              </div>
+            </div>
+            <div class="price">$50.25</div>
+          </div>
+          <!-- 2 -->
+          <div class="item-menu">
+            <div class="content">
+              <div class="imgbox">
+                <img src=".//images/03.png" alt="img" />
+              </div>
+              <div class="infobox">
+                <h4>Americano Coffee</h4>
+                <p>Milk with vanilla flavored</p>
+              </div>
+            </div>
+            <div class="price">$50.25</div>
+          </div>
+          <!-- 2 -->
+          <div class="item-menu">
+            <div class="content">
+              <div class="imgbox">
+                <img src=".//images/03.png" alt="img" />
+              </div>
+              <div class="infobox">
+                <h4>Americano Coffee</h4>
+                <p>Milk with vanilla flavored</p>
+              </div>
+            </div>
+            <div class="price">$50.25</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blogs section -->
+    <section class="blogs-coffee" id="blogs">
+      <div class="container">
+        <h2 class="section-title">Our Coffee Blogs</h2>
+        <div class="blogs">
+          <div class="blog-box">
+            <div class="image">
+              <img src="images/blog-1.jpg" alt="Coffee Blog 1" />
+            </div>
+            <div class="content">
+              <h3>Moments with coffee</h3>
+              <p>
+                Discover the secrets of coffee and its unique flavors through
+                inspiring articles that take you on a journey into the magical
+                world of coffee.
+              </p>
+            </div>
+          </div>
+          <div class="blog-box">
+            <div class="image">
+              <img src="images/blog-2.jpg" alt="Coffee Blog 2" />
+            </div>
+            <div class="content">
+              <h3>Flavor and story</h3>
+              <p>
+                Discover the secrets of coffee and its unique flavors through
+                inspiring articles that take you on a journey into the magical
+                world of coffee.
+              </p>
+            </div>
+          </div>
+          <div class="blog-box">
+            <div class="image">
+              <img src="images/blog-3.jpg" alt="Coffee Blog 3" />
+            </div>
+            <div class="content">
+              <h3>A cup of inspiration</h3>
+              <p>
+                Discover the secrets of coffee and its unique flavors through
+                inspiring articles that take you on a journey into the magical
+                world of coffee.
+              </p>
+            </div>
+          </div>
+          <div class="blog-box">
+            <div class="image">
+              <img src="images/blog-4.jpg" alt="Coffee Blog 3" />
+            </div>
+            <div class="content">
+              <h3>Coffee colours</h3>
+              <p>
+                Discover the secrets of coffee and its unique flavors through
+                inspiring articles that take you on a journey into the magical
+                world of coffee.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us section -->
+    <section class="contact-us" id="contactus">
+      <h2 class="section-title">Contact us</h2>
+      <div class="container">
+        <div class="contact-image">
+          <img src="images/content.png" alt="Coffee image" />
+        </div>
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="exa@gmail.com"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Place your message here"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="icons">
+        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"> <i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="text">© 2024 Copyright: <a href="#">Mohamed Reda</a></div>
+    </footer>
+
+     <!-- Modal for Cart -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <span id="close-cart" class="close-cart">X</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Items will appear here dynamically -->
+         <!-- <div class="cart-item">
+          <img src="/images/blog-4.jpg" alt="">
+          <h4 class="title">Coffee</h4>
+          <span class="price">26$</span>
+          <input type="number" id="quantity" value="">
+         </div> -->
+      </div>
+      <hr>
+      <div class="cart-footer">
+        <p>Total: $<span id="total-price">0</span></p>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <!-- <script src="js/shop.js"></script> -->
+  </body>
+</html>

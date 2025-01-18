@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shop page</title>
+    <link rel="icon" type="image/png" href="./images/logo.jpg" />
+    <!-- fontAwesom -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google fonts1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   <!-- popap form -->
+   <div class="cover-form">
+    <div class="container-form">
+      <span id="close-form">X</span>
+      <div class="sign-up">
+        <form action="" method="get">
+          <h1>Create new Account</h1>
+          <input type="text" placeholder="Name" id="sign-up-name"/>
+          <input type="email" placeholder="Email" id="sign-up-email" />
+          <input type="password" placeholder="Password" id="sign-up-password" />
+          <input type="submit" value="Submit" id="sign-up-submit">
+          <div id="btn-signin">Sign in Now</div>
+        </form>
+      </div>
+
+      <div class="sign-in">
+        <form action="" method="get">
+          <h1>Sign In Now</h1>
+          <input  name="email" placeholder="Email" id="sign-in-email" />
+          <input type="password" placeholder="Password" id="sign-in-password" />
+          <input type="submit" value="Submit" id="sign-in-submit">
+          <div id="btn-signup">Register Now</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!-- header -->
+    <header>
+      <!-- logo -->
+      <div class="logo">
+        <img src="./images/logo-1.png" alt="logo" srcset="" />
+      </div>
+      <!-- links -->
+      <nav>
+        <ul>
+          <li><a href="/index.html">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="/shop.html">shop</a></li>
+          <li><a href="#menu">menu</a></li>
+          <li><a href="#blogs">blogs</a></li>
+          <li><a href="#contactus">contact us</a></li>
+        </ul>
+      </nav>
+      <!-- icons -->
+      <div class="icons">
+        <i id="bars" class="fa-solid fa-bars"></i>
+        <i id="user" class="fa-solid fa-user"></i>
+
+        <i id="cart" class="fa-solid fa-cart-shopping">
+          <span>0</span>
+        </i>
+
+        <i id="mode" class="fa-regular fa-moon"></i>
+        
+        <!-- <i class="fa-regular fa-sun"></i> -->
+      </div>
+
+    </header>
+
+    <!-- ************************ ordre*********************** -->
+    <section class="categorys" id="shop.html">
+      <div class="container-left">
+        <div class="search">
+          <input
+            type="search"
+            placeholder="Search hear"
+            id="search"
+            onkeyup="Search(this.value)"
+          />
+          <i id="search-icon" class="fa-solid fa-search"></i>
+        </div>
+        <div class="filter">
+          <h3>Filter</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="Coffee" />
+              <label for="Coffee">Coffee</label>
+            </li>
+            <li>
+              <input type="checkbox" id="Cappuccino" />
+              <label for="Cappuccino">Cappuccino</label>
+            </li>
+            <li>
+              <input type="checkbox" id="nescafe" />
+              <label for="nescafe">nescafe</label>
+            </li>
+            <li>
+              <input type="checkbox" id="tea" />
+              <label for="tea">tea</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-right shop">
+        <h1 class="title">Choose what you like</h1>
+        <div class="category-container">
+          <!-- <div class="card">
+            <div class="box-img">
+              <img src="/images/Caramel cappuccino.jpg" alt="img" />
+            </div>
+            <div class="content-text">
+              <h3>caramel cappuccino</h3>
+              <p>Lorem ipsum dolor sit amet ipsum dolor...</p>
+            </div>
+            <div class="content">
+              <span class="price">12$</span>
+              <button>order now</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- ************************ ordre*********************** -->
+    <!-- footer -->
+    <footer>
+      <div class="icons">
+        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"> <i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="text">© 2024 Copyright: <a href="#">Mohamed Reda</a></div>
+    </footer>
+
+     <!-- Modal for Cart -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <span id="close-cart" class="close-cart">X</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Items will appear here dynamically -->
+         <!-- <div class="cart-item">
+          <img src="/images/blog-4.jpg" alt="">
+          <h4 class="title">Coffee</h4>
+          <span class="price">26$</span>
+          <input type="number" id="quantity" value="">
+         </div> -->
+      </div>
+      <hr>
+      <div class="cart-footer">
+        <p>Total: $<span id="total-price">0</span></p>
+        <button id="checkout">Checkout</button>
+      </div>
+    </div>
+  </div>
+    <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/shop.js"></script>
+  </body>
+</html>
