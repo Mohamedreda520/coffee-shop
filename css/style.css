@@ -751,7 +751,8 @@ section.hero {
 /* ---------------------------------------------------- */
 /* start about section */
 .about {
-  padding: var(--padding-bottom);
+  padding-bottom: var(--padding-bottom);
+  padding-top: var(--padding-top);
 
 }
 
@@ -802,12 +803,10 @@ section.hero {
   }
 
   .about .about-text {
-    margin-right: 0;
     margin-bottom: 20px;
   }
 
   .about .about-image img {
-    width: 80%;
     margin: 0 auto;
   }
 }
@@ -815,11 +814,12 @@ section.hero {
 @media (max-width: 480px) {
   
   .about .about-text h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .about .about-text p {
     font-size: 1rem;
+    text-align: justify;
   }
 }
 
