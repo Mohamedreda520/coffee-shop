@@ -513,7 +513,7 @@ section.hero {
   /* background-image: linear-gradient(to right, rgb(223 213 200 / 21%), rgba(223, 213, 200, 0.8)), url(./images/bg-1.jpg);
     */
   /* background-color: #dfd5c8; */
-  background-image: url(/images/bg-2.jpg);
+  background-image: url(../images/bg-2.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
